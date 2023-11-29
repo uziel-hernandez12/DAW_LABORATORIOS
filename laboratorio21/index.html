@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio No.21 - Cadena JSON con varios elementos</title>
+</head>
+
+<body>
+    <p id="salida"></p>
+
+    <script>
+        //cadena en formato JSON
+        const empleados = '[{"numemp":"233423","nombre":"Uziel","edad":19},{"numemp":"12334","nombre":"Miguel","edad":20}]';
+
+        //convertimos la cadena a objetoJSON
+        const myObj = JSON.parse(empleados);
+
+        //recorremos los objetos json
+       /* for(let i in myObj){
+            console.log(myObj[i].numemp);
+
+        }*/
+
+        //recorriendo elementos utilizando un foreach
+        myObj.forEach((myObj) => {
+            console.log(myObj.numemp);
+        });
+    </script>
+</body>
+
+</html>

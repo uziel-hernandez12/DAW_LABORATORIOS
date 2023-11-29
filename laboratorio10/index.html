@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 10</title>
+    <style>
+        #h1{
+            font-size: 72px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        #caja-padre{
+            width: 600px;
+            height: 600px;
+            background-color: beige;
+            border-radius: 50%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #html5{
+            background-image: url(imagenes/html5100x100.png);
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 10000;
+            right: 250px;
+            top: -50px;
+        }
+        
+        #css{
+            background-image: url(imagenes/css100x100.png);
+            width: 100px;
+            height: 100px;
+            position: absolute; 
+            top: 250px;
+            right: -50px;
+        }
+
+        #javascript{
+            background-image: url(imagenes/javascript140x100.png);
+            width: 140px;
+            height: 100px;
+            position: absolute;
+            right: 230px;
+            bottom: -50px;
+
+        }
+
+        #java{
+            background-image: url(imagenes/java360x200.png);
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 250px;
+            left: -80px;
+        }
+
+        #logo-uaz{
+            background-image: url(imagenes/logo_uaz450x409.png);
+            width: 450px;
+            height: 409px;
+            position: absolute;
+            right: 75px;
+            top: 95.5px;
+        }
+
+        #logo-carrera{
+            background-image: url(imagenes/logo_itc_carrera490x111.png);
+            width: 490px;
+            height: 111px;
+            position: absolute ;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Tecnologías Web</h1>
+
+    <div id="caja-padre">
+        <div id="html5"></div>
+
+        <div id="css"></div>
+
+        <div id="javascript"></div>
+
+        <div id="java"></div>
+
+        <div id="logo-uaz"></div>        
+    </div>
+    <div id="logo-carrera"></div>
+</body>
+</html>

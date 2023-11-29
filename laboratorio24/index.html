@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio No.24 - Uso de callbacks con javascript</title>
+</head>
+<body>
+    <div class="container ">
+        <h1>Laboratorio No.24</h1>
+         <p>Realiza una aplicacion con javaScript que haga uso de callback que te permita obtener
+            todos los numeros pares de un arreglo dado
+
+            almacena en un arreglo todos los numeros que sean pares
+
+            imprime el resultado correspondiente
+
+            puntos: 10 participaciones
+         </p>
+         <p id="numeros"></p>
+         <p id="imprimirPares"></p>
+    </div>
+    <script>
+        const arreglo = [1,2,3,4,5,6,7,8,9,10];
+
+        function esPar(x){
+            return  x % 2 == 0;
+        }
+        function obtenerNumerosPares(arreglo, esPar){
+            const arrayPares = [];
+            for(let i = 0; i<arreglo.length; i++){
+                if(esPar(arreglo[i])){
+                    arrayPares.push(arreglo[i])
+                }
+            }
+            return arrayPares;
+        }
+        document.getElementById('numeros').innerHTML = "Numeros en el arreglo: "+arreglo;
+        document.getElementById('imprimirPares').innerHTML = "Numeros pares: "+obtenerNumerosPares(arreglo,esPar);
+        
+    </script>
+</body>
+</html>

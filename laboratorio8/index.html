@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio No.8 - Uso de posición relativa con CSS</title>
+    <style>
+        #paisaje {
+            background-image: url("imagenes/paisaje.jpg");
+            width: 800px;
+            height: 533px;
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        #sol {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            left: 120px;
+            top: 15px;
+        }
+
+        #venado {
+            background-image: url("imagenes/venado.png");
+            width: 120px;
+            height: 100px;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 470px;
+            top: 120px;
+        }
+
+        #nombre {
+            position: relative;
+            text-align: right;
+            right: 15px;
+            top: 270px;
+            font-style: italic;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="paisaje">
+        <div id="sol">
+
+        </div>
+
+        <div id="venado">
+
+        </div>
+
+        <h1 id="nombre">Uziel Jonathan Hernández Llamas</h1>
+    </div>
+</body>
+
+</html>

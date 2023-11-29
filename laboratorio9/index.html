@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio No. 9 - Uso de la propiedad absoluta en CSS</title>
+
+    <style>
+        #caja-padre{
+            background-color: rgb(121, 94, 94);
+            width: 420px;
+            height: 320px;
+            position: relative;
+            
+        }
+        #caja1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 10000;
+            /*para hacerlo a la derecha de la pagina*/
+            right:0px;
+
+            /*para bajarlo en la parte inferior del contenedor en el que esta*/
+            bottom: 0px;
+
+        }
+
+        #caja2 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0px;
+            top: 0;
+        }
+
+        .texto {
+            text-align: center;
+            font-weight: bold;
+            font-size: 72px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Posición absoluta con CSS</h1>
+    <ul>
+        <li>El posicionamiento absoluto afecta el flujo de los elementos HTML ya que el elemento que es afectado por
+            esta regla se elimina del diseño.
+        </li>
+        <li>Al usar el posicionamiento absoluto se tiene que considerar que el elemento se ubicará con respecto al
+            viewport o ventana del navegador,
+            A menos que se declare la posición de su elemento padre. Es decir, tanto para el elemento padre como para el
+            hijo se debe de declarar la propiedad position.
+        </li>
+        <li>
+            Podemos observar que el orden de los elementos en el flujo original en que se ubicaron determinan esta
+            ubicación en la página, es por eso que el primer elemento (caja-1) superpone a todos los demás.
+
+        </li>
+    </ul>
+    <hr>
+    <div id="caja-padre">
+        <div id="caja1" class="texto">1</div>
+    </div>
+
+    <div id="caja2" class="texto">2</div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio No.18 - Cuenta Bancaria</title>
+    <script>
+        class Cuenta {
+            constructor(saldo){
+                this.saldo = saldo;
+            }
+            retirar(cantidad){
+                if(cantidad <= this.saldo && cantidad > 0){
+                    this.saldo -= cantidad;
+                }
+            }
+
+            depositar(cantidad){
+                if(cantidad > 0){
+                    this.saldo += cantidad;
+                }
+            }
+
+            consultarSaldo(){
+                document.getElementById()
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Laboratorio No. 18 - Cuenta Bancaria</h1>
+    <ul>
+        <li>1. Realiza una aplicacion con JavaScriptque te permita el manejo de una cuenta bancaria</li>
+        <li>2. Crea una clase Cuenta que te permita retirar, depositar y consultar saldo</li>
+        <li>3. Al momento de crear el objeto se especificará la cantidad a tener como saldo inicial</li>
+        <li>4. Llama a cada uno de los metodos y muestra el saldo despues de cada operacion</li>
+    </ul>
+    <script>
+        cuentaBancaria = new Cuenta(1000);
+
+        cuentaBancaria.retirar(300);
+        console.log(cuentaBancaria.consultarSaldo());
+
+        cuentaBancaria.depositar(400);
+        console.log(cuentaBancaria.consultarSaldo())
+    </script>
+</body>
+</html>

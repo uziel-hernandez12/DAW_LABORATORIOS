@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio No.20 - Mostrando los datos en una tabla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="data/empleados.json"></script>
+</head>
+
+<body>
+    <div class="container ">
+        <h1>Laboratorio NO.22 - Mostrando los datos JSON en una tabla</h1>
+        <button type="button" onclick="mostrarEmpleados();" class="btn btn-info ">
+            Mostrar Empleados</button>
+
+    </div>
+    <div class="container " id="mostrar">
+
+    </div>
+    <script>
+        function mostrarEmpleados() {
+            //obtenemos los datos del empleado
+            const empleados = JSON.parse(data);
+
+            let tabla = '<table class="table table-striped">';
+                tabla += '<thead>';
+                tabla += '<tr><th>Num. Emp</th><th>Nombre</th><th>Edad</th></tr>';
+                tabla += '</thead><tbody>';
+
+                let filas = "";
+            for(let i in empleados){
+                filas += '<tr>';
+                    filas += '<td>' + empleados[i].numemp+'</td>';
+                    filas += '<td>' + empleados[i].nombre+'</td>';
+                    filas += '<td>' + empleados[i].edad+'</td>';
+                filas += '</tr>';
+            }//fin del for
+
+            tabla += filas;
+            tabla += '</tbody></table>'
+            document.getElementById('mostrar').innerHTML = tabla;
+        }
+    </script>
+</body>
+
+</html>

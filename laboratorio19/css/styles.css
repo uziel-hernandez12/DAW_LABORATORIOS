@@ -1,0 +1,40 @@
+.redondear-esquina{
+    border-radius: 15px;
+    height: 50vh;
+}
+.center-text {
+    text-align: center;
+}
+
+.color {
+    background-color: green;
+}
+.cambiarColor:hover + .color {
+    color: green; /* Color después de presionar el botón */
+}
+#errorMensaje {
+    color: yellow;
+}
+
+#bienvenido {
+    color: yellow;
+    font-size: 30px;
+}
+#password{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.select{
+    width: 70%;
+    margin: 40px auto 10px auto;
+}
+
+.texto{
+    width: 70%;
+    text-align: center;
+}
+
+#mensaje{
+    color: yellow;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla con cajas flotantes</title>
+    <style>
+        body {
+            margin: -20px 0px;
+
+        }
+
+        header {
+            background-color: aqua;
+            height: 120px;
+
+        }
+
+        nav {
+            background-color: beige;
+            padding: 20px;
+        }
+
+        #barra-izquierda {
+            width: 20%;
+            background-color: azure;
+            float: left;
+        }
+
+        main {
+            width: 58%;
+            background-color: #5fce1e;
+            float: left;
+            padding: 10px;
+        }
+
+        #barra-derecha {
+            width: 20%;
+            background-color: #3be2da;
+            float: left;
+        }
+
+        /*romper el flujo de los elementos*/
+        footer {
+            background-color: red;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Este es mi cabecera</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>&nbsp;:&nbsp;<a href="#">Contacto</a>
+    </nav>
+
+    <aside id="barra-izquierda">
+        Barra lateral izquierda
+    </aside>
+
+    <main>
+        <h2>Este es el contenido principal de la pagina</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor qui sed quos reiciendis repellat! Aspernatur
+            soluta quo omnis saepe sint, ab velit eum autem quos obcaecati optio. Sunt, suscipit praesentium.
+        </p>
+    </main>
+
+    <aside id="barra-derecha">
+        Barra lateral derecha
+    </aside>
+
+    <footer>
+        <h2>Este es el pie de página</h2>
+    </footer>
+</body>
+
+</html>
